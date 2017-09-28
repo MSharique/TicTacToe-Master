@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Tic Tac Toe - Master</title>
+        <link rel = 'stylesheet' type = 'text/css' href = 'style.css'>
+    </head>
+
+    <body>
+        <div class = 'main-container'>
+            <div class = 'board'>
+                <!-- data-indx following boxes divs represents boxes index in 1D array representation -->
+                <div class='boxes' data-indx = "0" ></div>
+                <div class='boxes' data-indx = "1" ></div>
+                <div class='boxes' data-indx = "2" ></div>
+                <div class='boxes' data-indx = "3" ></div>
+                <div class='boxes' data-indx = "4" ></div>
+                <div class='boxes' data-indx = "5" ></div>
+                <div class='boxes' data-indx = "6" ></div>
+                <div class='boxes' data-indx = "7" ></div>
+                <div class='boxes' data-indx = "8" ></div>
+            </div>
+
+            <div class = 'control'>
+                <div class = 'intial'>
+                    <div class='start'> Start </div>
+                </div>
+                <div class = 'ingame' id="human">Player <strong>X</strong> Turn</div>
+                <div class = 'ingame' id="won">Congratulations!!! You won!</div>
+                <div class = 'ingame' id="lost">Ohh, You lost!</div>
+                <div class = 'ingame' id="draw">Let's shakehand</div>
+            </div>
+            <button onclick="restart()" id="restart"></button>
+        </div>
+
+        <script src = "scripts/jquery-1.10.1.min.js"></script>
+        <script src = "scripts/ui.js"></script>
+        <script src = "scripts/game.js"></script>
+        <script src = "scripts/ai.js"></script>
+    </body>
+</html>
